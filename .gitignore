@@ -1,0 +1,7 @@
+cat > .gitignore <<'EOF'
+node_modules/
+cypress/downloads/
+cypress/screenshots/
+cypress/videos/
+.DS_Store
+EOF
