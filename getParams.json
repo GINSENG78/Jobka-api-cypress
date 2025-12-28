@@ -1,0 +1,16 @@
+{
+    "positive":[
+        {"name": "by position","qs": {"position":"QA"}},
+        {"name": "by company","qs": {"company":"Apple"}},
+        {"name": "by location","qs": {"location":"Toronto"}},
+        {"name": "by date","qs": {"date":"2020-07-11"}},
+        {"name": "location+company","qs": {"location":"Toronto","company":"Apple"}}
+    ],
+    "negative":[
+
+        {"name": "missing key","qs": {"position":"QA"}, "status":401},
+        {"name": "wrong key","qs": {"key":"wrong","position":"QA","status":403}},
+        {"name": "wrong date format","qs": {"date":"2020/07/11","status":400}}
+        
+    ]
+}
